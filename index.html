@@ -4,31 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/05e0429d9a.js" crossorigin="anonymous"></script>
     <title>David Pak Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="navbar-header">
         <nav class="navbar">
             <a href="#"> <img style="width:70px; height: 40px" src="images/Logo.png"></a>
+
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link"> <i class="fa-solid fa-house"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link"><i class="fa-solid fa-user"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link"><i class="fa-solid fa-code"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link"><i class="fa-solid fa-briefcase"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link"><i class="fa-brands fa-linkedin"></i></a>
-                </li>
+                <div title="Home">
+                    <li class="nav-item active-btn" data-id="home">
+                        <a href="#" class="nav-link"> <i class="fa-solid fa-house"></i></a>
+                    </li>
+                </div>
+                <div title="About me" data-id="about">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                </div>
+                <div title="Projects" data-id="projects">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-code"></i></a>
+                    </li>
+                </div>
+                <div title="Experience" data-id="experience"> 
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-briefcase"></i></a>
+                    </li>
+                </div>
+                <div title="Socials" data-id="socials">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </div>
+                <div title="Turn On/Off Dark Mode">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa-regular fa-moon"></i></a>
+                    </li>
+                </div>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -37,6 +53,33 @@
             </div>
     
         </nav>
+    </header>
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="images/Picture of me.jpg" alt="">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    I'm <span>David Pak.</span>
+                    A Full Stack developer.
+                </h1>
+                <p>
+                    I am currently pursuing a Bachelor's in Computer Science at the 
+                    University of Washington. I'm a Full Stack Developer, I create websites 
+                    and mobile applications using various programming languages and frameworks. 
+                </p>
+                <div class="btn-con">
+                    <a href="" class="main-btn">
+                        <span class="btn-text">Download Resume</span>
+                        <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
     <script src="script.js"></script>
 </body>
