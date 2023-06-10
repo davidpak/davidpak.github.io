@@ -16,33 +16,33 @@
 
             <ul class="nav-menu">
                 <div title="Home">
-                    <li class="nav-item active-btn" data-id="home">
-                        <a href="#" class="nav-link"> <i class="fa-solid fa-house"></i></a>
+                    <li class="nav-item">
+                        <div class="nav-link active-btn" data-id="home"> <i class="fa-solid fa-house"></i></div>
                     </li>
                 </div>
-                <div title="About me" data-id="about">
+                <div title="About me">
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fa-solid fa-user"></i></a>
+                        <div class="nav-link" data-id="about"><i class="fa-solid fa-user"></i></div>
                     </li>
                 </div>
-                <div title="Projects" data-id="projects">
+                <div title="Projects">
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fa-solid fa-code"></i></a>
+                        <div class="nav-link" data-id="projects"><i class="fa-solid fa-code"></i></div>
                     </li>
                 </div>
-                <div title="Experience" data-id="experience"> 
+                <div title="Experience"> 
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fa-solid fa-briefcase"></i></a>
+                        <div class="nav-link" data-id="experience"><i class="fa-solid fa-briefcase"></i></div>
                     </li>
                 </div>
-                <div title="Socials" data-id="socials">
+                <div title="Socials">
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fa-brands fa-linkedin"></i></a>
+                        <div class="nav-link" data-id="socials"><i class="fa-brands fa-linkedin"></i></div>
                     </li>
                 </div>
                 <div title="Turn On/Off Dark Mode">
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fa-regular fa-moon"></i></a>
+                        <a href="#" class="theme-btn"><i class="fa-regular fa-moon"></i></a>
                     </li>
                 </div>
             </ul>
@@ -65,7 +65,6 @@
             <div class="right-header">
                 <h1 class="name">
                     I'm <span>David Pak.</span>
-                    A Full Stack developer.
                 </h1>
                 <p>
                     I am currently pursuing a Bachelor's in Computer Science at the 
@@ -81,6 +80,109 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Who is David Pak?</h4>
+                    <p>
+                        My name is David Pak, I am a junior studying Computer Science at 
+                        the University of Washington. I am a Full Stack developer with proficiency
+                        in languages such as Java, Python, C/C++, HTML, JavaScript, and CSS. I have 
+                        also utilized many different frameworks for web/app development such as React, 
+                        Node, Typescript, and SwiftUI. I wish to pursue work in the software engineering,
+                        and Machine Learning fields.
+                        <br /> <br />
+                        I am also an accomplished musician, tennis player, and coach.
+                        I am currently pursuing a minor in music theory at 
+                        the University of Washington and have been playing tennis for 
+                        over ten years. Additionally, I have over three years of experience
+                        as a recreational tennis coach 
+                    </p>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text"><i class="fa-brands fa-html5"></i></p>
+                            <p class="small-text">Front End <br /> Developer</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text"><i class="fa-solid fa-graduation-cap"></i></p>
+                            <p class="small-text">Undergraduate <br /> student</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text"><i class="fa-brands fa-node"></i></p>
+                            <p class="small-text">Back End<br /> Developer</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text"><i class="fa-solid fa-robot"></i></p>
+                            <p class="small-text">ML Engineer </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="projects">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span></h2>
+            </div>
+            
+            <div class="project-card-container">
+                <div class="project-card">
+                    <h3>Trak</h3>
+                    <p>An iOS app with Apple Watch compatibility built with SwiftUI that allows athletes and coaches to track high-level sports stats via real-time image recognition. Utilizes a machine learning model with a convolutional neural network that learns using stochastic gradient descent as the optimizer function and cross-entropy loss as the loss function.</p>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                  <h3>University of Washington Campus Map</h3>
+                  <p>An interactive UW Campus map built with React, TypeScript, and Leaflet. Utilizes the directed graph ADT to create the map. The buildings themselves were 
+                    provided by a dataset including a list of long names and short names for each building. The appliation utilizes Dijkstra's shortest path algorithm to find the
+                    shortest path from one building to another.
+                  </p>
+                  <div class="hover-items">
+                    <h3>Project Source</h3>
+                    <div class="icons">
+                        <a href="#" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            
+                <div class="project-card">
+                  <h3>Dynamic Memory Allocator</h3>
+                  <p>Implemented a fully functioning dynamic memory allocator in C. This is a reimplimentation of the 
+                    malloc and free functions that exist within C. These functions have the same functionality as the originals.
+                  </p>
+                  <div class="hover-items">
+                    <h3>Project Source</h3>
+                    <div class="icons">
+                        <a href="#" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

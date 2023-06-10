@@ -12,7 +12,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }));
 
 (function () {
-    [...document.querySelectorAll(".control")].forEach(button => {
+    [...document.querySelectorAll(".nav-link")].forEach(button => {
         button.addEventListener("click", function() {
             document.querySelector(".active-btn").classList.remove("active-btn");
             this.classList.add("active-btn");
